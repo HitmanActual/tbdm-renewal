@@ -21,6 +21,7 @@ class CreateRenewalsTable extends Migration
             $table->integer('remaining_days')->default(0);
             $table->integer('user_id');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 

@@ -20,6 +20,5 @@ $router->group(['prefix' => 'v1', 'namespace' => 'Api\v1'], function() use($rout
     $router->put('renewals/{renewal}','RenewalController@update');
     $router->patch('renewals/{renewal}','RenewalController@update');
     $router->delete('renewals/{renewal}','RenewalController@destroy');
-    $router->delete('renewals/{renewal}','RenewalController@destroy');
 });
 
